@@ -16,4 +16,4 @@ module.exports = fp(async function (fastify, opts) {
   fastify.onClose(async () => {
     await db.pgp.end()
   })
-}, '^1.0.0')
+}, '^2.0.0')

@@ -1,4 +1,4 @@
-'uses trict'
+'use strict'
 
 const fp = require('fastify-plugin')
 const massive = require('massive')

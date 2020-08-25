@@ -17,7 +17,7 @@ const fastify = Fastify()
 fastify.register(massive, {
   massive: connInfo,
   async onLoad(db) {
-    // DB is massive isntance
+    // DB is a connected Massive instance;
     // use this hook to set up your database
     // if it is needed.
     // We will reload the meta-info after

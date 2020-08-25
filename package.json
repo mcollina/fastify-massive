@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/mcollina/fastify-massive#readme",
   "devDependencies": {
-    "fastify": "^2.8.0",
-    "pg-promise": "^9.1.4",
+    "fastify": "^3.2.1",
+    "pg-promise": "^10.5.8",
     "pre-commit": "^1.2.2",
     "snazzy": "^8.0.0",
     "standard": "^14.0.0",
     "tap": "^14.0.0"
   },
   "dependencies": {
-    "fastify-plugin": "^1.6.0",
-    "massive": "^6.1.0"
+    "fastify-plugin": "^2.3.2",
+    "massive": "^6.6.0"
   }
 }

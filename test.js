@@ -4,7 +4,7 @@ const { test } = require('tap')
 const Fastify = require('fastify')
 const massive = require('.')
 
-const connInfo = 'postgres://postgres@localhost/postgres'
+const connInfo = 'postgres://postgres:postgres@localhost/postgres'
 
 test('connect, save and load a doc', async (t) => {
   const fastify = Fastify()

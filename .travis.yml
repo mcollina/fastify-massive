@@ -1,7 +1,10 @@
 language: node_js
 node_js:
+  - "14"
   - "12"
   - "10"
-  - "8"
 addons:
-  postgresql: "9.6"
+  postgresql: "11"
+env:
+  global:
+  - POSTGRES_PASSWORD=postgres

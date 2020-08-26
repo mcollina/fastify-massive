@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "standard | snazzy && tap --no-esm test.js",
-    "postgres": "docker run --rm -p 5432:5432 postgres:9.6-alpine"
+    "postgres": "docker run -p 5432:5432 --name massive-postgres -e POSTGRES_PASSWORD=postgres --rm postgres:11-alpine"
   },
   "repository": {
     "type": "git",

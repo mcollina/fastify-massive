@@ -25,7 +25,7 @@ test('connect, save and load a doc', async (t) => {
     }
   })
 
-  t.tearDown(fastify.close.bind(fastify))
+  t.teardown(fastify.close.bind(fastify))
 
   fastify.post('/', async (request, reply) => {
     t.pass('post called')
@@ -62,7 +62,7 @@ test('connect, save and load a doc', async (t) => {
   })
 
   t.equal(seedRes.statusCode, 200)
-  t.deepEqual(JSON.parse(seedRes.payload), {
+  t.same(seedRes.json(), {
     original: 'body'
   })
 
@@ -82,7 +82,7 @@ test('connect, save and load a doc', async (t) => {
   })
 
   t.equal(getRes.statusCode, 200)
-  t.deepEqual(JSON.parse(getRes.payload), {
+  t.same(getRes.json(), {
     something: 'else'
   })
 })

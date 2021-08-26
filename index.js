@@ -6,6 +6,7 @@ const massive = require('massive')
 module.exports = fp(async function (fastify, opts) {
   let db = await massive(opts.massive)
 
+  /* istanbul ignore else */
   if (opts.onLoad) {
     await opts.onLoad(db)
     db = await db.reload()

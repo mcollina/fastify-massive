@@ -4,7 +4,7 @@
   "description": "Massive.js plugin for Fastify",
   "main": "index.js",
   "scripts": {
-    "test": "standard | snazzy && tap --no-esm test.js",
+    "test": "standard | snazzy && tap test.js",
     "postgres": "docker run -p 5432:5432 --name massive-postgres -e POSTGRES_PASSWORD=postgres --rm postgres:11-alpine"
   },
   "repository": {
@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/mcollina/fastify-massive#readme",
   "devDependencies": {
+    "@fastify/pre-commit": "^2.0.2",
     "fastify": "^3.2.1",
     "pg-promise": "^10.5.8",
-    "pre-commit": "^1.2.2",
-    "snazzy": "^8.0.0",
-    "standard": "^14.0.0",
-    "tap": "^14.0.0"
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.0",
+    "tap": "^15.0.0"
   },
   "dependencies": {
-    "fastify-plugin": "^2.3.2",
+    "fastify-plugin": "^3.0.0",
     "massive": "^6.6.0"
   }
 }
